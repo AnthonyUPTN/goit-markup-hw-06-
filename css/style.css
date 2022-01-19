@@ -337,6 +337,7 @@ ul {
 .form-tel,
 .form-comment {
   margin-bottom: 10px;
+  padding-top: 28px;
 
   display: flex;
   flex-direction: column;
@@ -344,12 +345,27 @@ ul {
   position: relative;
 }
 
-input {
-  padding-top: 18px;
-}
-
 .inputs-name {
   margin-bottom: 4px;
+
+  position: absolute;
+  top: 38px;
+  left: 30px;
+}
+
+.name-comment {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input:focus ~ .inputs-name,
+input:not(:placeholder-shown) ~ .inputs-name {
+  color: #2196f3;
+
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .label-icon {
